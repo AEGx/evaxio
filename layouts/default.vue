@@ -1,8 +1,48 @@
+<script setup lang="ts">
+import Thenavbar from "~~/components/Thenavbar.vue";
+
+const menuItems: Object = [
+  { path: "/", title: "home" },
+  { path: "/product/log", title: "log" },
+  { path: "/product/wear", title: "wear" },
+]
+
+components: { Thenavbar }
+
+</script>
 <template>
-<ul class="menu bg-base-100 w-56 rounded-box">
-  <li><a>Item 1</a></li>
-  <li><a>Item 2</a></li>
-  <li><a>Item 3</a></li>
-  <slot />
-</ul>
+<Thenavbar />
+  <div class="flex h-full">
+    
+    <!-- START: SIDEBAR -->
+    <div class="fixed top-0 bottom-0 left-0 w-64 py-5 bg-primary text-primary-content">
+
+      <h1 class="flex items-center justify-between px-4 text-2xl font-bold">
+        Evaxio Shop
+      </h1>
+
+      <ul class="menu w-full mt-10 px-0">
+        <li :key="menuItem" v-for="menuItem in menuItems" :class="menuItem.path === $route.path ? 'bordered' : 'hover-bordered'">
+          <NuxtLink :to="menuItem.path">
+           {{menuItem.title}}
+          </NuxtLink>
+        </li>
+      </ul>
+
+    </div>
+    <!--  END : SIDEBAR -->
+
+    <!-- START: PAGE -->
+    <div class="w-full ml-64 pl-6">
+      <slot />
+    </div>
+    <!-- END: PAGE -->
+
+  </div>
 </template>
+
+<style scoped>
+  .menu li.hover-bordered a:hover, .menu li.bordered a {
+    @apply border-primary-content
+  }
+</style>
