@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import Thenavbar from "~~/components/Thenavbar.vue";
 
 const menuItems: Object = [
   { path: "/", title: "home" },
-  { path: "/product/log", title: "log" },
-  { path: "/product/wear", title: "wear" },
+  { path: "/category/log", title: "log" },
+  { path: "/category/wear", title: "wear" },
 ]
-
-components: { Thenavbar }
 
 </script>
 <template>
