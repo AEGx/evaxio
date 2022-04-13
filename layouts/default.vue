@@ -1,31 +1,41 @@
 <script setup lang="ts">
-
 const menuItems: Object = [
   { path: "/", title: "home" },
   { path: "/category/log", title: "log" },
   { path: "/category/wear", title: "wear" },
-]
-
+];
 </script>
 <template>
-<Thenavbar />
+  <Thenavbar />
   <div class="flex h-full">
-    
     <!-- START: SIDEBAR -->
-    <div class="fixed top-0 bottom-0 left-0 w-64 py-5 bg-primary text-primary-content">
-
+    <div
+      class="
+        fixed
+        top-0
+        bottom-0
+        left-0
+        w-64
+        py-5
+        bg-primary
+        text-primary-content
+      "
+    >
       <h1 class="flex items-center justify-between px-4 text-2xl font-bold">
         Evaxio Shop
       </h1>
 
       <ul class="menu w-full mt-10 px-0">
-        <li :key="menuItem" v-for="menuItem in menuItems" :class="menuItem.path === $route.path ? 'bordered' : 'hover-bordered'">
+        <li
+          :key="menuItem"
+          v-for="menuItem in menuItems"
+          :class="menuItem.path === $route.path ? 'bordered' : 'hover-bordered'"
+        >
           <NuxtLink :to="menuItem.path">
-           {{menuItem.title}}
+            {{ menuItem.title }}
           </NuxtLink>
         </li>
       </ul>
-
     </div>
     <!--  END : SIDEBAR -->
 
@@ -34,12 +44,12 @@ const menuItems: Object = [
       <slot />
     </div>
     <!-- END: PAGE -->
-
   </div>
 </template>
 
 <style scoped>
-  .menu li.hover-bordered a:hover, .menu li.bordered a {
-    @apply border-primary-content
-  }
+.menu li.hover-bordered a:hover,
+.menu li.bordered a {
+  @apply border-primary-content;
+}
 </style>
