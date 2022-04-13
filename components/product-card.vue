@@ -1,17 +1,17 @@
 <template>
   <div 
-    class="card w-64 bg-base-100 cursor-pointer"
+    class="card bg-base-100 cursor-pointer rounded-[3px] w-[13rem] mb-5 ml-3"
     @mouseover="isHovering = true"
     @mouseout="isHovering = false"
   >
   <figure class="overflow-hidden">
-    <img :class="isHovering && 'scale-110'" class="duration-500 transition-transform" :src="imageSrc" alt="Shoes" />
+      <img :class="isHovering && 'scale-110'" class="duration-700 transition-transform h-[16rem] w-[14.4rem]" :src="imageSrc" :alt="title" />
+      <span :class="isHovering ? 'w-full' : 'w-0'" class="absolute bottom-[5.13rem] h-[2.5px] bg-white duration-500"/>
   </figure>
-  <div class="card-body">
-    <p class="font-medium">
-      <span class="relative">
+  <div class="py-4 w-[13rem]">
+    <p class="font-medium ">
+      <span class="left-0">
         {{ title }}
-      <span :class="isHovering ? 'w-full' : 'w-0'" class="absolute bottom-0 left-0 h-[1.5px] bg-primary duration-500"></span>
       </span>
       </p>
     <h2 class="card-title">

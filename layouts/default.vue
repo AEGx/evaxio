@@ -30,7 +30,7 @@ const menuItems: Object = [
     <!--  END : SIDEBAR -->
 
     <!-- START: PAGE -->
-    <div class="w-full ml-64 pl-6">
+    <div class="w-full ml-64 px-3">
       <slot />
     </div>
     <!-- END: PAGE -->
