@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-base-100 fixed z-40">
+  <div class="navbar backdrop-blur-3xl bg-base-100/95 fixed z-40">
     <div class="flex-1 ml-64">
       <ul class="menu menu-horizontal p-0">
         <li>
@@ -20,33 +20,27 @@
               />
             </svg>
           </label>
-          <ul
-            class="
-              bg-base-100
-              left-0
-              top-[3.6rem]
-              fixed
-              ml-64
-              rounded-none
-              z-50
-            "
-          >
-            <!-- <mega-menu /> -->
-            <div class="card-body">
-              <h3 class="card-title">Card title!</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                ex, ducimus repellat excepturi perspiciatis facilis repudiandae
-                asperiores tempore odio? Vitae nulla facere, vol velit de saepe
-                ipsa cupiditate culpa hic non a ducimus voluptatibus, ipsum
-                temporibus accusantium laudantium beatae eos? ffbvw edfwyujmnb
-                fvcderfv fghju76yht
-              </p>
-            </div>
-          </ul>
+          <menu-t />
         </li>
         <li>
-          <label class="btn btn-ghost"> Sweat</label>
+          <label class="btn btn-ghost">Sweat</label>
+        </li>
+        <li>
+          <label class="btn btn-ghost">
+            Nouveautés
+            <svg
+              class="fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              />
+            </svg>
+          </label>
+          <menu-t />
         </li>
       </ul>
     </div>
@@ -122,10 +116,15 @@
               <span class="badge">New</span>
             </a>
           </li>
-          <li><a>Settings</a></li>
+          <li>
+            <a>Settings</a>
+          </li>
           <li><a>Logout</a></li>
         </ul>
       </div>
     </div>
   </div>
 </template>
+
+<script lang="ts">
+</script>

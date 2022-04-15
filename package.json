@@ -7,7 +7,6 @@
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@nuxtjs/fontawesome": "^1.1.2",
     "autoprefixer": "^10.4.4",
     "nuxt3": "latest",
@@ -15,6 +14,7 @@
     "tailwindcss": "^3.0.23"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "daisyui": "^2.13.6"
   }
 }
