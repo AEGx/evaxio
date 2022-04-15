@@ -1,11 +1,11 @@
 <template>
-  <div class="navbar bg-base-100" style="z-index: 222">
+  <div class="navbar bg-base-100 fixed z-40">
     <div class="flex-1 ml-64">
       <ul class="menu menu-horizontal p-0">
         <li>
           <label class="btn btn-ghost"> T-shert </label>
         </li>
-        <li tabindex="0">
+        <li>
           <label class="btn btn-ghost">
             Best seller
             <svg
@@ -20,15 +20,33 @@
               />
             </svg>
           </label>
-          <ul class="p-2 bg-base-100 z-20 w-64 progress-info">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-            <li><a>Submenu 2</a></li>
-            <li><a>Submenu 2</a></li>
+          <ul
+            class="
+              bg-base-100
+              left-0
+              top-[3.6rem]
+              fixed
+              ml-64
+              rounded-none
+              z-50
+            "
+          >
+            <!-- <mega-menu /> -->
+            <div class="card-body">
+              <h3 class="card-title">Card title!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                ex, ducimus repellat excepturi perspiciatis facilis repudiandae
+                asperiores tempore odio? Vitae nulla facere, vol velit de saepe
+                ipsa cupiditate culpa hic non a ducimus voluptatibus, ipsum
+                temporibus accusantium laudantium beatae eos? ffbvw edfwyujmnb
+                fvcderfv fghju76yht
+              </p>
+            </div>
           </ul>
         </li>
         <li>
-          <label class="btn btn-ghost"> Sweatt </label>
+          <label class="btn btn-ghost"> Sweat</label>
         </li>
       </ul>
     </div>
@@ -37,10 +55,10 @@
         <label class="btn btn-ghost">
           <div class="indicator justify-center items-center content-center">
             <img src="~/assets/images/signe-euro.png" class="h-[1.5rem]" />
-            <span class=""> &ensp; 234 €</span>
+            <span> &ensp; 234 €</span>
           </div>
         </label>
-        <label tabindex="0" class="btn btn-ghost btn-circle mx-2">
+        <label tabindex="0" class="btn btn-ghost btn-circle mx-3">
           <div class="indicator">
             <svg
               xmlns="http://www.w3.org/2000/svg"
