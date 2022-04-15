@@ -6,7 +6,7 @@ const menuItems: Object = [
 ];
 </script>
 <template>
-  <Thenavbar />
+  <the-navbar />
   <div class="flex h-full">
     <!-- START: SIDEBAR -->
     <div
@@ -19,6 +19,7 @@ const menuItems: Object = [
         py-5
         bg-primary
         text-primary-content
+        z-50
       "
     >
       <h1 class="flex items-center justify-between px-4 text-2xl font-bold">
@@ -40,7 +41,7 @@ const menuItems: Object = [
     <!--  END : SIDEBAR -->
 
     <!-- START: PAGE -->
-    <div class="w-full ml-64 px-3">
+    <div class="w-full ml-64 px-3 top-40">
       <slot />
     </div>
     <!-- END: PAGE -->
