@@ -1,6 +1,13 @@
 <template>
-  <div>
-    <h1>La Catégorie {{ $route.params.category }}</h1>
+  <div class="mt-20">
+    <h1 class="px-3">Catégorie Saisson 1</h1>
+    <div class="text-sm breadcrumbs px-3">
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>Documents</a></li>
+        <li>{{ $route.params.category }}</li>
+      </ul>
+    </div>
     <cards-container>
       <product-card
         :key="product.title"
