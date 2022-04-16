@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const sideMenusItems: Object = [
   { path: "/", title: "home" },
-  { path: "/category/log", title: "log" },
-  { path: "/category/wear", title: "wear" },
+  { path: "/category/sweat", title: "Sweat" },
+  { path: "/category/tshert", title: "T-shert" },
   { path: "/jobs", title: "Jobs" },
 ];
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="rating py-3">
+  <div class="rating py-3 rating-sm">
     <input
       disabled
       type="radio"

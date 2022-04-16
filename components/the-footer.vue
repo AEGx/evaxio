@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer p-10 bg-base-200 text-base-content -z-30">
+  <footer class="footer p-10 bg-base-200 text-base-content">
     <div>
       <svg
         width="50"
@@ -17,21 +17,21 @@
       <p>Evaxio Ltd.<br />realized by Overwi 2022</p>
     </div>
     <div>
-      <span class="footer-title -z-30">Services</span>
+      <p class="mb-[0.5rem] font-bold uppercase">Branding</p>
       <a class="link link-hover">Branding</a>
       <a class="link link-hover">Design</a>
       <a class="link link-hover">Marketing</a>
       <a class="link link-hover">Advertisement</a>
     </div>
     <div>
-      <span class="footer-title -z-30">Company</span>
+      <span class="mb-[0.5rem] font-bold uppercase">Company</span>
       <a class="link link-hover">About us</a>
       <a class="link link-hover">Contact</a>
       <NuxtLink to="/jobs" class="link link-hover">Jobs</NuxtLink>
       <a class="link link-hover">Press kit</a>
     </div>
     <div>
-      <span class="footer-title">Legal</span>
+      <span class="mb-[0.5rem] font-bold uppercase">Legal</span>
       <a class="link link-hover">Terms of use</a>
       <a class="link link-hover">Privacy policy</a>
       <a class="link link-hover">Cookie policy</a>
