@@ -23,7 +23,7 @@
         </p>
         <div class="space-x-5">
           <select class="select select-warning min-w-md select-sm">
-            <option disabled selected>Taille</option>
+            <option disabled selected>Tailles</option>
             <option>S</option>
             <option>M</option>
             <option>L</option>
