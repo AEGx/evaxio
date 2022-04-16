@@ -1,6 +1,6 @@
 <template>
   <div class="carousel">
-    <div class="carousel-item w-min">
+    <div class="carousel-item min-w-min">
       <img
         src="https://api.lorem.space/image/fashion?w=500&h=700"
         class="shadow-2xl ml-5"
