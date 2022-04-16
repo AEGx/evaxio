@@ -1,6 +1,5 @@
 <template>
   <ul
-    tabindex="0"
     class="
       left-0
       top-[3.6rem]

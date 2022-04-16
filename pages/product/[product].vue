@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-20 px-3 mb-5">
-    <h1>Hello product</h1>
+  <div class="px-3 mt-24 mb-5 rounded-sm">
+    <ProductDetails />
   </div>
 </template>
