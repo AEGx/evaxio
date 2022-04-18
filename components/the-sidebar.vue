@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const sideMenusItems: Object = [
-  { path: "/", title: "home" },
-  { path: "/category/sweat", title: "Sweat" },
-  { path: "/category/tshert", title: "T-shert" },
-  { path: "/jobs", title: "Jobs" },
+  { id: 1, path: "/", title: "home" },
+  { id: 2, path: "/category/sweat", title: "Sweat" },
+  { id: 3, path: "/category/tshert", title: "T-shert" },
+  { id: 4, path: "/jobs", title: "Jobs" },
 ];
 </script>
 <template>
@@ -26,8 +26,8 @@ const sideMenusItems: Object = [
 
     <ul class="menu w-full mt-10 px-0">
       <li
-        :key="sideMenusItem"
         v-for="sideMenusItem in sideMenusItems"
+        :key="sideMenusItem.id"
         :class="
           sideMenusItem.path === $route.path ? 'bordered' : 'hover-bordered'
         "

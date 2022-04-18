@@ -6,7 +6,7 @@
     <!--  END : SIDEBAR -->
 
     <!-- START: PAGE -->
-    <div class="w-full ml-64 px-3 top-40">
+    <div class="w-full ml-64 top-40">
       <slot />
     </div>
     <!-- END: PAGE -->
