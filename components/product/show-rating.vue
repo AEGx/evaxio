@@ -17,6 +17,7 @@
       disabled
       type="radio"
       name="rating-4"
+      checked
       class="mask mask-star-2 bg-yellow-500"
     />
     <input
