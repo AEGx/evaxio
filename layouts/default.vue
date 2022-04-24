@@ -14,6 +14,7 @@
 
   <!-- START: FOOTER -->
   <div class="ml-64">
+    <NuxtLayout name="info-secure-payement" />
     <the-footer />
   </div>
   <!-- END: FOOTER -->
