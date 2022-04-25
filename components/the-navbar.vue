@@ -47,7 +47,7 @@
     <div class="flex-none">
       <NuxtLink to="/vax" class="btn btn-ghost">
         <div class="indicator justify-center items-center content-center">
-          <img src="~/assets/images/signe-euro.png" class="h-[1.5rem]" />
+          <img src="/images/signe-euro.png" class="h-[1.5rem]" />
           <span> &ensp; 234 V</span>
         </div>
       </NuxtLink>
