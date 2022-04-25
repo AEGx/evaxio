@@ -7,13 +7,13 @@
           <tr>
             <td class="font-bold">Votre adresse</td>
             <td>05 rue des vieux moulins 77400, Lagny sur marne</td>
-            <td class="content-center space-x-2">
+            <td class="content-center space-x-2 p-3">
               <button class="btn btn-active btn-sm btn-ghost">
                 Changer mon adresse
               </button>
               <div
                 class="tooltip tooltip-left"
-                data-tip="La livraison se fait grâce à notre partenaire DHL."
+                data-tip="La livraison se fait grâce à notre partenaire DHL si vous êtes à l'étranger."
               >
                 <button class="btn btn-active btn-sm btn-info">
                   Choisir cette option
