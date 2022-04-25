@@ -54,7 +54,9 @@
         <td colspan="2" class="text-lg">TOTALE</td>
         <th class="text-lg">159 $</th>
         <th>
-          <button class="btn btn-info btn-xs">Choisir ma livraison</button>
+          <NuxtLink to="/delivery/order-process" class="btn btn-info btn-xs"
+            >Choisir ma livraison</NuxtLink
+          >
         </th>
       </tr>
     </tfoot>
