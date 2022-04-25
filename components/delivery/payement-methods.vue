@@ -6,7 +6,7 @@
           <!-- row 1 -->
           <tr class="place-content-end">
             <td class="flex-row">
-              <img :src="`../assets/images/${imgName}`" class="h-6" />
+              <img :src="`/images/${imgName}`" class="h-6" />
               {{ method }}
             </td>
             <td class="content-center space-x-2 p-3 text-right">
